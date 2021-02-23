@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper_form">
+        
+        <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+            
+            <input type="hidden"  name="send_to" value="jen@jenkramer.org">
+    
+            <fieldset>
+                <legend>
+                    Your contact
+                </legend>
+    
+                <label for="name">Your name</label>
+                <input type="text" name="name" id="name">
+        
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Don't forget your area code">
+        
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+    
+            <fieldset>
+                <legend>
+                    About your abduction
+                </legend>
+    
+                <label for="date">Requested date</label>
+                <input type="date" name="date" id="date" >
+    
+                <label for="qty">How many people would you like?</label>
+                <input type="number" name="qty" id="qty" min="1" max="10">
+    
+                <p>
+                    What type of UFO you prefer?
+                </p>
+    
+                <label>
+                    <input type="radio" name="ufotype" value="Classic">
+                    Classic oval UFOs
+                </label>
+    
+                <label>
+                    <input type="radio" name="ufotype" value="starwars" checked>
+                    Star Wars style imperial cruiser
+                </label>
+    
+                <label>
+                    <input type="radio" name="ufotype" value="battlestar">
+                    Battletstar Galactical style viper
+                </label>
+    
+                <label>
+                    <input type="radio" name="ufotype" value="Borg">
+                    Borg style cube
+                </label>
+    
+                <br>
+                <label for="abtype"> What type of abduction experience do you want?</label>
+                <select name="" id="abtype" name="abtype">
+                    <option value=""> Selected one ...</option>
+                    <option value="tour">Tour of the solar system</option>
+                    <option value="dinner">Alien dinner and discussion</option>
+                    <option value="dance">Dancing</option>
+                </select>
+    
+                <label for="comments">Request</label>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your message"></textarea>
+    
+                <label >
+                    <input type="checkbox" name="suscribe" value="suscribe" checked >
+                    Add me to your email list
+                </label>
+    
+            </fieldset>
+    
+            <button type="submit"> Order your abduction !!!</button>
+    
+        </form>
+        
+    </div>
+
+    <script src="form.js" ></script>
+</body>
+</html>
